@@ -1,5 +1,5 @@
 mes-config-ms:
-  commandes-last: 10  # Custom property for recent commands
+  commandes-last: 20  # Custom property for recent commands
 server:
   port: 8080  # Application port
 management:
