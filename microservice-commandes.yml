@@ -1,9 +1,11 @@
 mes-config-ms:
-  commandes-last: 20  # Custom property for recent commands
+  commandes-last: 10
+
 server:
-  port: 8080  # Application port
+  port: 8080
+
 management:
   endpoints:
     web:
       exposure:
-        include: refresh, health, env
+        include: health,env,refresh
