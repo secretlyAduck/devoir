@@ -1,18 +1,12 @@
 mes-config-ms:
-  commandes-last: 10  # Example custom configuration
-
-server:
-  port: 8080  # Microservice runs on port 8080 (different from the Config Server)
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: health,env,refresh  # Enable Actuator endpoints
+  commandes-last: 10  # Custom property to control last orders display
 
 spring:
   datasource:
-    url: jdbc:h2:mem:testdb
-    username: sa
+    url: jdbc:mysql://localhost:3306/commandes_db
+    username: root
     password: password
-    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
